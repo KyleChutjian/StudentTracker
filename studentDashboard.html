@@ -4,15 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>Student DashBoard</title>
 </head>
 <body>
+    <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-    <a class="navbar-brand" href="index.html">CoHost</a>
+    <a class="navbar-brand" href="home.html">CoHost</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="oi oi-menu"></span> Menu
     </button>
@@ -27,15 +29,23 @@
     </div>
     </div>
     </nav>
+
+    <!-- Actual Dashboard -->
     <div class="student-dashboard-container">
-        <button type="button" class="btn btn-primary">Add Course</button>
+        <div class="add-course-container">
+            <button type="button" class="btn btn-primary">Add Course</button>
+        </div>
+   <!-- Sample Course Container #1 -->
         <div class="sample-student-course-container">
             <h3 class="sample-student-course-1-header">SER-340: Software Requirements</h3>
-            
+            <h5 class="sample-faculty-header">Prof. ElKharboutly</h5>
+            <h5 class="sample-student-count">Number of Students: 8</h5>
         </div>
+        <!-- Sample Course Container #2 -->
         <div class="sample-student-course-container">
             <h3 class="sample-student-course-2-header">SER-325: Databases</h3>
-
+            <h5 class="sample-faculty-header">Prof. ElKharboutly</h5>
+            <h5 class="sample-student-count">Number of Students: 32</h5>
         </div>
     </div>
 </body>

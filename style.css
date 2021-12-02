@@ -1,9 +1,15 @@
 .student-dashboard-container {
-
+    max-width:50%;
+    padding-left:2%;
 }
 
+.add-course-container {
+    padding: 3% 40% 3%;
+}
 .sample-student-course-container {
-
+    background-color: lightgray;
+    border: 1px solid black;
+    margin-top:10%;
 }
 
 .sample-student-course-1-header {
