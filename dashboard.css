@@ -23,6 +23,7 @@ body{
 }
 
 .dataCard{
+    transition:transform 0.5s ease-out;
     padding: 3%;
     color: white;
     border: none;
@@ -38,6 +39,7 @@ body{
 }
 
 .addClass{
+    transition:transform 0.5s ease-out;
     border: none;
     text-align: left;
     padding: 6%;
@@ -49,6 +51,7 @@ body{
 }
 
 .classCard{
+    transition:transform 0.5s ease-out;
     border: none;
     text-align: left;
     padding: 6%;
@@ -88,4 +91,9 @@ body{
 
 .cardLink:hover{
     text-decoration: none;
+}
+
+.classCard:hover,.dataCard:hover, .addClass:hover {
+    transform:translateY(-3%);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
