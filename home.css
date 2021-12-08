@@ -1,0 +1,75 @@
+.navigation{
+    padding: 1% 10% 1% 10%;
+}
+
+body{
+    font-family: Montserrat, sans-serif;
+    width: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(45deg, #a963ffff 25%, #7200ffff 50%,#a963ffff  75%) fixed;
+}
+
+#logo{
+    font-weight: 900;
+    color:#7200ff;
+}
+
+.welcome{
+    color: white;
+    margin-top: 8vh;
+    font-size:400%;
+    font-weight:870;
+}
+
+.subWelcome{
+    color: white;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+}
+
+.mainContainer{
+    display:flex;
+}
+
+.rowWithCard{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.card{
+    border: none;
+}
+
+.nav-tabs-navigation{
+    background-color: rgb(58, 58, 58);
+}
+
+.studentPill:not(.active), .adminPill:not(.active){
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+
+/* adjusts classes for smaller screens :) */
+
+@media screen and (max-width: 900px) {
+    .welcome{
+        font-size: 6.8vw;
+    }
+
+    .subWelcome{
+        font-size: small;
+    }
+
+    .logInToStartText{
+        font-size: large;
+    }
+    .rowWithCard{
+        padding-left:5%;
+        padding-right: 5%;
+    }
+}
+
+
+
+  
