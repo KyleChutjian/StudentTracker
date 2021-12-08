@@ -12,3 +12,88 @@ body{
     font-weight: 900;
     color:#7200ff;
 }
+
+#mainArea{
+    padding: 3% 10% 0% 10%;
+}
+
+.Welcome{
+    padding-left: 2%;
+    margin-bottom: 2%;
+}
+
+.dataCard{
+    transition:transform 0.5s ease-out;
+    padding: 3%;
+    color: white;
+    border: none;
+    background-color: rgb(156, 80, 255);
+    border-radius: .7em;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2%;
+}
+
+.lineChart{
+    float:right;
+}
+
+.addClass{
+    transition:transform 0.5s ease-out;
+    border: none;
+    text-align: left;
+    padding: 6%;
+    background-color: rgb(255, 255, 255);
+    border-radius: .7em;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+}
+
+.classCard{
+    transition:transform 0.5s ease-out;
+    border: none;
+    text-align: left;
+    padding: 6%;
+    background-color: rgb(255, 255, 255);
+    border-radius: .7em;;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+}
+
+.plusSign{
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+    color: #303030;
+}
+
+.addClassText{
+    font-weight: 650 ;
+    color: #303030;
+}
+
+.className{
+    font-weight: 650 ;
+    color: #303030;
+}
+
+.classInfo{
+    font-size:1rem;
+    line-height: 1rem;
+    font-weight: 450 ;
+    color: #303030;
+}
+
+.button{
+    margin-top:3%;
+}
+
+.cardLink:hover{
+    text-decoration: none;
+}
+
+.classCard:hover,.dataCard:hover, .addClass:hover {
+    transform:translateY(-3%);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
