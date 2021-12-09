@@ -103,6 +103,10 @@ body{
     width:100%;
 }
 
-.card {
-    width:100%;
+.accordion {
+    width: 100%;
+}
+
+.lesson-button-container {
+    padding-bottom: 1%;
 }
