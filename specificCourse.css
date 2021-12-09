@@ -18,6 +18,10 @@ body{
     /* width:100%; */
 }
 
+.course-faculty-header{
+    padding-left: 2%;
+}
+
 .Welcome{
     padding-left: 2%;
     margin-bottom: 2%;
