@@ -65,13 +65,8 @@
                         <div class="invalid-feedback">Enter a valid course name.</div>
                     </div>
                     <div class="form-group">
-                        <label>Course ID:</label>
-                        <input type="text" class="form-control" id="courseID" placeholder="Enter Course ID" required>
-                        <div class="invalid-feedback">Enter a valid course ID.</div>
-                    </div>
-                    <div class="form-group">
-                        <label>Semester:</label>
-                        <input type="text" class="form-control" id="courseSem" placeholder="Enter Semester" required>
+                        <label>Number of Lessons:</label>
+                        <input type="number" class="form-control" id="courseLessons"  min="0" max="42" onkeyup="if(parseInt(this.value)>42){ this.value =42; return false; }" required>
                         <div class="invalid-feedback">Enter a valid semester.</div>
                     </div>
                     <button type="button" class="btn btn-primary btn-block" data-bs-dismiss="modal">Publish Course & Create Invite</button>
@@ -117,11 +112,21 @@
 
         <!--Course Cards all follow same format-->
         <div class="col-lg-4">
+          <div class="card classCard">
+          <a class="cardLink" href="facultyCourse.html">
+              <h4 class="className">ENR110</h3>
+                <h5 class="classInfo">Lessons: 28</h5>
+              <h5 class="classInfo">Students: 28</h5>
+              <button type="button" class="btn btn-block btn-primary rounded button">Manage Course</button>
+          </div>
+          </a>
+        </div>
+        <div class="col-lg-4">
             <a class="cardLink" href="facultyCourse.html">
             <div class="card classCard">
                 <h4 class="className">MER110</h3>
+                <h5 class="classInfo">Lessons: 42</h5>
                 <h5 class="classInfo">Students: 23</h5>
-                <h5 class="classInfo">Sem: SP22</h5>
                 <button type="button" class="btn btn-block btn-primary rounded button">Manage Course</button>
             </div>
             </a>
@@ -130,29 +135,19 @@
           <a class="cardLink" href="facultyCourse.html">
           <div class="card classCard">
                 <h4 class="className">MER225</h3>
+                <h5 class="classInfo">Lessons: 42</h5>
                 <h5 class="classInfo">Students: 19</h5>
-                <h5 class="classInfo">Sem: SP22</h5>
                 <button type="button" class="btn btn-block btn-primary rounded button">Manage Course</button>
             </div>
             </a>
         </div>
 
         <div class="col-lg-4">
-            <div class="card classCard">
-            <a class="cardLink" href="facultyCourse.html">
-                <h4 class="className">ENR110</h3>
-                <h5 class="classInfo">Students: 28</h5>
-                <h5 class="classInfo">Sem: SP22</h5>
-                <button type="button" class="btn btn-block btn-primary rounded button">Manage Course</button>
-            </div>
-            </a>
-        </div>
-        <div class="col-lg-4">
             <a class="cardLink" href="facultyCourse.html">
             <div class="card classCard">
                 <h4 class="className">MER375</h3>
+                  <h5 class="classInfo">Lessons: 28</h5>
                 <h5 class="classInfo">Students: 16</h5>
-                <h5 class="classInfo">Sem: SP22</h5>
                 <button type="button" class="btn btn-block btn-primary rounded button">Manage Course</button>
             </div>
             </a>
@@ -161,8 +156,8 @@
             <a class="cardLink" href="facultyCourse.html">
           <div class="card classCard">
                 <h4 class="className">MER240</h3>
+                <h5 class="classInfo">Lessons: 28</h5>
                 <h5 class="classInfo">Students: 19</h5>
-                <h5 class="classInfo">Sem: SP22</h5>
                 <button type="button" class="btn btn-block btn-primary rounded button">Manage Course</button>
             </div>
             </a>

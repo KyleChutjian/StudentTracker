@@ -54,13 +54,24 @@
             </div>
             <div class="modal-body">
              <form action="" method="">
-                 <div class="form-group">
-                     <label>First and Last Name:</label>
-                     <input type="text" class="form-control" id="firstName" placeholder="Enter First and Last Name" required>
-                     <div class="invalid-feedback">Enter a valid Name.</div>
+               <div class="row">
+                 <div class="col-6">
+                  <div class="form-group">
+                    <label>First Name:</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                    <div class="invalid-feedback">Enter a valid Name.</div>
+                  </div>
                  </div>
+                <div class="col-6">
+                  <div class="form-group">
+                    <label>Last Name:</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                    <div class="invalid-feedback">Enter a valid Name.</div>
+                  </div>
+                </div>
+               </div>
                  <div class="form-group">
-                     <label>Username:</label>
+                     <label>Quinnipiac Email:</label>
                      <input type="text" class="form-control" id="username" placeholder="Enter Username" required>
                      <div class="invalid-feedback">Enter a valid Username.</div>
                  </div>
@@ -72,11 +83,7 @@
                  <div class="form-group">
                   <label>Confirm Password:</label>
                   <input type="password" class="form-control" id="passwordConfirm" placeholder="Confirm Password" required>
-                  <div class="invalid-feedback">Password Dosn't Match.</div>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Professor?</label>
+                  <div class="invalid-feedback">Password Doesn't Match.</div>
               </div>
                  <button type="button" class="btn btn-primary btn-block" data-bs-dismiss="modal">Sign Up</button>
              </form>
@@ -115,9 +122,10 @@
               <div class="card-body">
                   <div class="tab-content text-center">
                       <!--STUDENT LOGIN FORM TAB-->
+                      <!--VALIDATION IS INCLUDED-->
                       <div class="tab-pane active" id="Student">
                         <h4 class="logInToStartText">Welcome <strong>Student</strong>, Log In To Get Started</h4>
-                              <form>
+                          <form>
                                   <div class="form-group">
                                       <input 
                                         class="form-control form-control-lg" 
@@ -140,45 +148,34 @@
                                     </a>
                                   </div>
                                 </form>
-                                <script>
-                                  (function () {
-                                    const emailInput = document.querySelector("input");
-                                    const form = document.querySelector("form");
-                                    console.log(emailInput);
-
-                                    emailInput.addEventListener("input", () => {
-                                      emailInput.setCustomValidity("");
-                                      emailInput.checkValidity();
-                                    });
-
-                                    emailInput.addEventListener("invalid", () => {
-                                      if (emailInput.value === "") {
-                                        emailInput.setCustomValidity("This cannot be empty!");
-                                      } else {
-                                        emailInput.setCustomValidity("Emails must be in \"name@quinnipiac.edu\" format!");
-                                      }
-                                    });
-                                  });
-                                </script>
                                 <h6 class="signUp h6" style="margin-top: 1vh;">Don't have an account? <a href="#myModal" class="cardLink" data-bs-toggle="modal" data-bs-target="#myModal" ><u>Sign Up!</u></a></h1>
                       </div>
                       <!--ADMIN LOGIN FORM TAB-->
+                      <!--VALIDATION IS INCLUDED-->
                       <div class="tab-pane" id="Admin">
                         <h4 class="logInToStartText">Welcome <strong>Professor</strong>, Log In To Get Started</h4>
                           <form>
-                              <div class="form-group">
-                                  <input class="form-control form-control-lg" type="text" id="login" class="fadeIn second" name="login" placeholder="Professor E-Mail" style="border-radius: .7em;">
-                              </div>
+                          <div class="form-group">
+                            <input 
+                              class="form-control form-control-lg" 
+                              type="text" id="login" 
+                              class="fadeIn second" 
+                              name="login" 
+                              placeholder="Quinnipiac E-Mail" 
+                              style="border-radius: .7em;"
+                              required
+                              pattern=".*@(quinnipiac|qu).edu"
+                              >
+                        </div>
                               <div class="form-group">
                                   <input class="form-control form-control-lg" type="password" id="password" class="fadeIn third" name="login" placeholder="Password" style="border-radius: .7em;">
                               </div>
                               <div class="form-group adminLogInBtn" >
                                 <a href="facultyDashboard.html">
-                                  <input class="form-control form-control-lg" type="button" class="fadeIn fourth" value="Log In" style="border-radius: .7em; color: white; background-color: rgb(111, 0, 255);" >
+                                  <input class="form-control form-control-lg" type="button" target="_blank" action="facultyDashboard.html" class="fadeIn fourth" value="Log In" style="border-radius: .7em; color: white; background-color: rgb(111, 0, 255);" >
                                 </a>
                               </div>
                             </form>
-                            <h6 class="signUp h6" style="margin-top: 1vh;">Don't have an account? <a href="#SignUp"><u>Sign Up!</u></a></h1> 
                       </div>
                   </div>
               </div>
@@ -187,6 +184,26 @@
     </div>
   </div>
 
+  <script>
+    (function () {
+      const emailInput = document.querySelector("input");
+      const form = document.querySelector("form");
+      console.log(emailInput);
+
+      emailInput.addEventListener("input", () => {
+        emailInput.setCustomValidity("");
+        emailInput.checkValidity();
+      });
+
+      emailInput.addEventListener("invalid", () => {
+        if (emailInput.value === "") {
+          emailInput.setCustomValidity("This cannot be empty!");
+        } else {
+          emailInput.setCustomValidity("Emails must be in \"name@quinnipiac.edu\" format!");
+        }
+      });
+    });
+  </script>
   <!--SCRIPTS REQUIRED FOR TABBED NAVIGATION ON CARD-->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>

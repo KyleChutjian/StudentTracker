@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat::300,400,500,900" rel="stylesheet">
 
-  <title>Faculty Course</title>
+  <title>Student Course</title>
 </head>
 <body>
   <!-- Navbar -->
@@ -49,7 +49,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   <!-- Task 1 Log Hours Modal -->
-  <div id="log-task1-hours" class="modal fade" role="dialog"  aria-hidden="true" tabindex="-1">
+  <div id="log-task-hours" class="modal fade" role="dialog"  aria-hidden="true" tabindex="-1">
     <div class="modal-dialog">
       <!-- Modal content-->
       <div class="modal-content">
@@ -58,17 +58,48 @@
           <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <form action="" method="">
+          <form action="" method="">                  
             <div class="form-group">
-              <label><strong>Lesson Name:</strong> ENR-110</label>
-            </div>
-            <div class="form-group">
-              <label><strong>Task Name:</strong> Bottle Rocket Preparation</label>
-            </div>
-            <div class="form-group">
-              <label><strong>Hours Logged:</strong></label>
-              <input type="text" class="form-control" id="dueDate" placeholder="Log time spent for this specific task in minutes" required>
-              <div class="invalid-feedback">Enter a valid number in minutes</div>
+              <h6>Enter time you have worked on certain tasks.</h1>
+              <label><strong>Assignments:</strong></label>
+              <div class="row">
+                <div class="col-6">
+                  <label>Hours:</label>
+                  <input label="Hours:"type="number" class="form-control" id="hoursSpent" placeholder="Hours Spent" required>
+                  <div class="invalid-feedback">Enter a valid number in hours</div>
+                </div>
+                <div class="col-6">
+                  <label>Minutes:</label>
+                  <input label="Mins:"type="number" class="form-control" id="minutesSpent" placeholder="Minutes Spent" required>
+                  <div class="invalid-feedback">Enter a valid number in hours</div>
+                </div>
+              </div>
+              <label style="padding-top: 3%"><strong>Studying:</strong></label>
+              <div class="row">
+                <div class="col-6">
+                  <label>Hours:</label>
+                  <input label="Hours:"type="number" class="form-control" id="hoursSpent" placeholder="Hours Spent" required>
+                  <div class="invalid-feedback">Enter a valid number in hours</div>
+                </div>
+                <div class="col-6">
+                  <label>Minutes:</label>
+                  <input label="Mins:"type="number" class="form-control" id="minutesSpent" placeholder="Minutes Spent" required>
+                  <div class="invalid-feedback">Enter a valid number in hours</div>
+                </div>
+              </div>
+              <label style="padding-top: 3%"><strong>Other:</strong></label>
+              <div class="row">
+                <div class="col-6">
+                  <label>Hours:</label>
+                  <input label="Hours:"type="number" class="form-control" id="hoursSpent" placeholder="Hours Spent" required>
+                  <div class="invalid-feedback">Enter a valid number in hours</div>
+                </div>
+                <div class="col-6">
+                  <label>Minutes:</label>
+                  <input label="Mins:"type="number" class="form-control" id="minutesSpent" placeholder="Minutes Spent" required>
+                  <div class="invalid-feedback">Enter a valid number in hours</div>
+                </div>
+              </div>
             </div>
           <button type="button" class="btn btn-primary btn-block" data-bs-dismiss="modal">Log Hours</button>
           </form>
@@ -80,359 +111,74 @@
     </div>
   </div>
 
-  <!-- Task 2 Log Hours Modal -->
-  <div id="log-task2-hours" class="modal fade" role="dialog"  aria-hidden="true" tabindex="-1">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Log Hours</h4>
-          <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <form action="" method="">
-            <div class="form-group">
-              <label><strong>Lesson Name:</strong> ENR-110</label>
-            </div>
-            <div class="form-group">
-              <label><strong>Task Name:</strong> Build Bottle Rockets</label>
-            </div>
-            <div class="form-group">
-              <label><strong>Hours Logged:</strong></label>
-              <input type="text" class="form-control" id="dueDate" placeholder="Log time spent for this specific task in minutes" required>
-              <div class="invalid-feedback">Enter a valid number in minutes</div>
-            </div>
-          <button type="button" class="btn btn-primary btn-block" data-bs-dismiss="modal">Log Hours</button>
-          </form>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-bs-dismiss="modal">Cancel</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Task 3 Log Hours Modal -->
-  <div id="log-task3-hours" class="modal fade" role="dialog"  aria-hidden="true" tabindex="-1">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Log Hours</h4>
-          <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <form action="" method="">
-            <div class="form-group">
-              <label><strong>Lesson Name:</strong> ENR-110</label>
-            </div>
-            <div class="form-group">
-              <label><strong>Task Name:</strong> Test Bottle Rockets</label>
-            </div>
-            <div class="form-group">
-              <label><strong>Hours Logged:</strong></label>
-              <input type="text" class="form-control" id="dueDate" placeholder="Log time spent for this specific task in minutes" required>
-              <div class="invalid-feedback">Enter a valid number in minutes</div>
-            </div>
-          <button type="button" class="btn btn-primary btn-block" data-bs-dismiss="modal">Log Hours</button>
-          </form>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-bs-dismiss="modal">Cancel</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Task 4 Log Hours Modal -->
-  <div id="log-task4-hours" class="modal fade" role="dialog"  aria-hidden="true" tabindex="-1">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Log Hours</h4>
-          <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <form action="" method="">
-            <div class="form-group">
-              <label><strong>Lesson Name:</strong> ENR-110</label>
-            </div>
-            <div class="form-group">
-              <label><strong>Task Name:</strong> Bottle Rocket Report</label>
-            </div>
-            <div class="form-group">
-              <label><strong>Hours Logged:</strong></label>
-              <input type="text" class="form-control" id="dueDate" placeholder="Log time spent for this specific task in minutes" required>
-              <div class="invalid-feedback">Enter a valid number in minutes</div>
-            </div>
-          <button type="button" class="btn btn-primary btn-block" data-bs-dismiss="modal">Log Hours</button>
-          </form>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-bs-dismiss="modal">Cancel</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-   <!-- Task 1 Information Modal -->
-   <div id="task1-info" class="modal fade" role="dialog"  aria-hidden="true" tabindex="-1">
-    <div class="modal-dialog">
-    <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Bottle Rocket Preparation</h4>
-          <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <form action="" method="">
-            <div class="form-group">
-              <label><strong>Lesson Name:</strong> Mechanical Engineering Module</label>
-            </div>
-            <div class="form-group">
-              <label><strong>Due Date:</strong> 9/4/2021 - 11:59pm</label>
-            </div>
-            <div class="form-group">
-              <label><strong>Students Completed:</strong> 28/28</label>
-            </div>
-            <div class="form-group">
-              <label><strong>Average Time Logged:</strong> 1 hour and 15 minutes</label>
-            </div>
-            <div class="form-group">
-              <label><strong>Description:</strong> Students will complete the outlined document provided on BlackBoard with their group members.</label>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Remove</button>
-            <button type="button" class="btn btn-default" data-bs-dismiss="modal">Return</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-   <!-- Task 2 Information Modal -->
-   <div id="task2-info" class="modal fade" role="dialog"  aria-hidden="true" tabindex="-1">
-    <div class="modal-dialog">
-    <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Build Bottle Rockets</h4>
-          <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <form action="" method="">
-            <div class="form-group">
-              <label><strong>Lesson Name:</strong> Mechanical Engineering Module</label>
-            </div>
-            <div class="form-group">
-              <label><strong>Due Date:</strong> 10/12/2021 - 11:59pm</label>
-            </div>
-            <div class="form-group">
-              <label><strong>Students Completed:</strong> 28/28</label>
-            </div>
-            <div class="form-group">
-              <label><strong>Average Time Logged:</strong> 2 hours and 3 minutes</label>
-            </div>
-            <div class="form-group">
-              <label><strong>Description:</strong> Students will begin making their rockets in preparation for their test day.</label>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Remove</button>
-            <button type="button" class="btn btn-default" data-bs-dismiss="modal">Return</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-   <!-- Task 3 Information Modal -->
-   <div id="task3-info" class="modal fade" role="dialog"  aria-hidden="true" tabindex="-1">
-    <div class="modal-dialog">
-    <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Test Bottle Rockets</h4>
-          <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <form action="" method="">
-            <div class="form-group">
-              <label><strong>Lesson Name:</strong> Mechanical Engineering Module</label>
-            </div>
-            <div class="form-group">
-              <label><strong>Due Date:</strong> 10/19/2021 - 3:29pm</label>
-            </div>
-            <div class="form-group">
-              <label><strong>Students Completed:</strong> 17/28</label>
-            </div>
-            <div class="form-group">
-              <label><strong>Average Time Logged:</strong> 1 hour and 30 seconds</label>
-            </div>
-            <div class="form-group">
-              <label><strong>Description:</strong> Students will prepare to test their bottle rockets during class.</label>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Remove</button>
-            <button type="button" class="btn btn-default" data-bs-dismiss="modal">Return</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-   <!-- Task 4 Information Modal -->
-   <div id="task4-info" class="modal fade" role="dialog"  aria-hidden="true" tabindex="-1">
-    <div class="modal-dialog">
-    <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Bottle Rocket Report</h4>
-          <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <form action="" method="">
-            <div class="form-group">
-              <label><strong>Lesson Name:</strong> Mechanical Engineering Module</label>
-            </div>
-            <div class="form-group">
-              <label><strong>Due Date:</strong> 10/26/2021 - 11:59pm</label>
-            </div>
-            <div class="form-group">
-              <label><strong>Students Completed:</strong> 0/28</label>
-            </div>
-            <div class="form-group">
-              <label><strong>Average Time Logged:</strong> 0 minutes</label>
-            </div>
-            <div class="form-group">
-              <label><strong>Description:</strong> Students will work with their group to finalize their results in the outlined report provided on BlackBoard.</label>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Remove</button>
-            <button type="button" class="btn btn-default" data-bs-dismiss="modal">Return</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <!-- Course Name & Logged Hours Image -->
   <div class="container-lg" id="mainArea">
     <div class="row">
       <h1 class="course-faculty-header" style="padding-bottom:1%;"><strong>ENR-110-01:</strong> The World of an Engineer</h1>
-      <!-- Tasks & Lessons -->
+      <!-- Lessons -->
     </div>
-
-    <div class="row">
-      <h3 class="course-subheader" style="padding-left:2%;">Lessons:</h3>
-    </div>
-
       <div class="row">
         <div class="col-lg-12" style="padding-bottom: 5%;">
-          <!-- Accordion -->
-          <div id="accordion">
             <div class="card">
-              <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
-                  <button class="btn btn-link button-accordion" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    Mechanical Engineering Module
-                  </button>
-                </h5>
+              <div class="col-lg-12 card-body d-lg-flex">
+                <div class="col-lg-6">
+                  <h5 class="mb-0">
+                      Lesson 1
+                  </h5>
+                  <h6>Hours Logged: 3</h6>
               </div>
-              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">
-                  <h5>Tasks: <small>*Click on a task to log hours</small></h5>
-                  <ul>
-                    <li><a href="#log-task1-hours" class="taskLink" data-bs-toggle="modal" data-bs-target="#log-task1-hours">Bottle Rocket Preparation</a>: 1 hour and 15 minutes</li>
-                    <li><a href="#log-task2-hours" class="taskLink" data-bs-toggle="modal" data-bs-target="#log-task2-hours">Build Bottle Rockets</a>: 1 hour</li>
-                    <li><a href="#log-task3-hours" class="taskLink" data-bs-toggle="modal" data-bs-target="#log-task3-hours">Test Bottle Rockets</a>: 1 hour and 15 minutes</li>
-                    <li><a href="#log-task4-hours" class="taskLink" data-bs-toggle="modal" data-bs-target="#log-task4-hours">Bottle Rocket Report</a>: 0 minutes</li>
-                  </ul>
-                  <div class="student-lesson-hours">
-                    <strong>Total Time Logged:</strong> 3 hours and 30 minutes
-                  </div>
-                </div>
+              <div class="col-lg-6">
+                <a href="#task1-info" class="taskLink" data-bs-toggle="modal" data-bs-target="#log-task-hours">
+                <button class="btn btn-block btn-primary"type="button">Log Hours</button>
+              </a>
+              </div>
               </div>
             </div>
             <div class="card">
-              <div class="card-header" id="headingTwo">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Civil Engineering Module
-                  </button>
-                </h5>
+              <div class="col-lg-12 card-body d-lg-flex">
+                <div class="col-lg-6">
+                  <h5 class="mb-0">
+                      Lesson 2
+                  </h5>
+                  <h6>Hours Logged: --</h6>
               </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="card-body">
-                  <h5>Tasks: <small>*Click on a task to log hours</small></h5>
-                  <ul>
-                    <li><a href="#task1-info" class="taskLink" data-bs-toggle="modal" data-bs-target="#task1-info">Dam Preparation Report</a>: 30 minutes</li>
-                    <li><a href="#task3-info" class="taskLink" data-bs-toggle="modal" data-bs-target="#task3-info">Build Dam</a>: 0 minutes</li>
-                    <li><a href="#task4-info" class="taskLink" data-bs-toggle="modal" data-bs-target="#task4-info">Dam Report</a>: 0 minutes</li>
-                  </ul>
-                  <div class="student-lesson-hours">
-                    <strong>Total Time Logged:</strong> 30 minutes
-                  </div>
-                </div>
+              <div class="col-lg-6">
+                <a href="#task1-info" class="taskLink" data-bs-toggle="modal" data-bs-target="#log-task-hours">
+                <button class="btn btn-block btn-primary"type="button">Log Hours</button>
+              </a>
+              </div>
               </div>
             </div>
             <div class="card">
-              <div class="card-header" id="headingThree">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Software Engineering Module
-                  </button>
-                </h5>
+              <div class="col-lg-12 card-body d-lg-flex">
+                <div class="col-lg-6">
+                  <h5 class="mb-0">
+                      Lesson 3
+                  </h5>
+                  <h6>Hours Logged: --</h6>
               </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body">
-                  <h5>Tasks: <small>*Click on a task to log hours</small></h5>
-                  <ul>
-                    <li><a href="#task1-info" class="taskLink" data-bs-toggle="modal" data-bs-target="#task1-info">Learn MIT App Inventor</a>: 1 hour</li>
-                    <li><a href="#task2-info" class="taskLink" data-bs-toggle="modal" data-bs-target="#task2-info">App Project Proposal</a>: 1 hour</li>
-                    <li><a href="#task3-info" class="taskLink" data-bs-toggle="modal" data-bs-target="#task3-info">Program Project</a>: 0 minutes</li>
-                    <li><a href="#task4-info" class="taskLink" data-bs-toggle="modal" data-bs-target="#task4-info">Project Report</a>: 0 minutes</li>
-                  </ul>
-                  <div class="student-lesson-hours">
-                    <strong>Total Time Logged:</strong> 2 hours
-                  </div>
-                </div>
+              <div class="col-lg-6">
+                <a href="#task1-info" class="taskLink" data-bs-toggle="modal" data-bs-target="#log-task-hours">
+                <button class="btn btn-block btn-primary"type="button">Log Hours</button>
+              </a>
+              </div>
               </div>
             </div>
             <div class="card">
-              <div class="card-header" id="headingFour">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                    Industrial Engineering Module
-                  </button>
-                </h5>
+              <div class="col-lg-12 card-body d-lg-flex">
+                <div class="col-lg-6">
+                  <h5 class="mb-0">
+                      Lesson 4
+                  </h5>
+                  <h6>Hours Logged: --</h6>
               </div>
-              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                <div class="card-body">
-                  <h5>Tasks: <small>*Click on a task to log hours</small></h5>
-                  <ul>
-                    <li><a href="#task1-info" class="taskLink" data-bs-toggle="modal" data-bs-target="#task1-info">Learn Industrial Engineering Concepts</a>: 0 minutes</li>
-                    <li><a href="#task2-info" class="taskLink" data-bs-toggle="modal" data-bs-target="#task2-info">Lego Assembly Line Preparation Document</a>: 0 minutes</li>
-                    <li><a href="#task3-info" class="taskLink" data-bs-toggle="modal" data-bs-target="#task3-info">Lego Assembly Line</a>: 0 minutes</li>
-                    <li><a href="#task4-info" class="taskLink" data-bs-toggle="modal" data-bs-target="#task4-info">Lego Assembly Line Report</a>: 0 minutes</li>
-                  </ul>
-                  <div class="student-lesson-hours">
-                    <strong>Total Time Logged:</strong> 0 minutes
-                  </div>
-                </div>
+              <div class="col-lg-6">
+                <a href="#task1-info" class="taskLink" data-bs-toggle="modal" data-bs-target="#log-task-hours">
+                <button class="btn btn-block btn-primary"type="button">Log Hours</button>
+              </a>
+              </div>
               </div>
             </div>
-          </div>
         </div>
-
-
-
     </div>
   </div>
 

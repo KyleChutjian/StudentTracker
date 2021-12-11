@@ -56,19 +56,9 @@
                <div class="modal-body">
                 <form action="" method="">
                     <div class="form-group">
-                        <label>Course Name:</label>
-                        <input type="text" class="form-control" id="courseName" placeholder="Enter Course Name" required>
+                        <label>Invitation Code:</label>
+                        <input type="text" class="form-control" id="courseName" placeholder="Enter Course Invitation Code" required>
                         <div class="invalid-feedback">Enter a valid course name.</div>
-                    </div>
-                    <div class="form-group">
-                        <label>Course ID:</label>
-                        <input type="text" class="form-control" id="courseID" placeholder="Enter Course ID" required>
-                        <div class="invalid-feedback">Enter course invite code.</div>
-                    </div>
-                    <div class="form-group">
-                        <label>Semester:</label>
-                        <input type="text" class="form-control" id="courseSem" placeholder="Enter Semester" required>
-                        <div class="invalid-feedback">Enter a valid semester.</div>
                     </div>
                     <button type="button" class="btn btn-primary btn-block" data-bs-dismiss="modal">Join Course</button>
                 </form>
@@ -99,6 +89,17 @@
 
         <!--Course Cards all follow same format-->
         <div class="col-lg-4">
+          <div class="card classCard">
+          <a class="cardLink" href="studentCourse.html">
+              <h4 class="className">ENR110</h3>
+              <h5 class="classInfo">Logged Tasks: 1</h5>
+              <h5 class="classInfo">Unlogged Tasks: 3</h5>
+              <button type="button" class="btn btn-block btn-primary rounded button">View Course</button>
+          </div>
+          </a>
+      </div>
+      
+        <div class="col-lg-4">
             <a class="cardLink" href="studentCourse.html">
             <div class="card classCard">
                 <h4 class="className">MER110</h3>
@@ -114,17 +115,6 @@
                 <h4 class="className">MER225</h3>
                 <h5 class="classInfo">Logged Tasks: 13</h5>
                 <h5 class="classInfo">Unlogged Tasks: 0</h5>
-                <button type="button" class="btn btn-block btn-primary rounded button">View Course</button>
-            </div>
-            </a>
-        </div>
-
-        <div class="col-lg-4">
-            <div class="card classCard">
-            <a class="cardLink" href="studentCourse.html">
-                <h4 class="className">ENR110</h3>
-                <h5 class="classInfo">Logged Tasks: 7</h5>
-                <h5 class="classInfo">Unlogged Tasks: 1</h5>
                 <button type="button" class="btn btn-block btn-primary rounded button">View Course</button>
             </div>
             </a>
